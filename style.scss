@@ -1,0 +1,153 @@
+// lear
+// Interactive Rating Component
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+// Colors
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGray: hsl(217, 12%, 63%);
+$mediumGray: hsl(216, 12%, 54%);
+$mediumBlue: hsl(214, 31%, 11%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+body {
+  background-color: $veryDarkBlue;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+// Container
+.container {
+  width: min(400px, 90vw);
+  background-image: radial-gradient(circle at top, $darkBlue, $mediumBlue);
+  padding: 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+
+  .icon-star {
+    background-color: $darkBlue;
+    padding: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .title {
+    color: $white;
+    font-size: 1.7rem;
+    margin: 2rem 0 0.5rem;
+    font-weight: 700;
+  }
+
+  .text {
+    color: $lightGray;
+    font-weight: 400;
+    line-height: 1.6rem;
+  }
+
+  .select-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: $darkBlue;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      font-size: 1rem;
+      color: $lightGray;
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+
+      &.active {
+        background-color: $mediumGray;
+        color: $white;
+      }
+    }
+  }
+
+  .btn {
+    border: none;
+    background-color: $orange;
+    color: $white;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 0.95rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+
+  .second-section {
+    text-align: center;
+    display: none;
+  }
+
+  .thank-img {
+    display: block;
+    margin: auto;
+  }
+
+  .selected {
+    padding: 0.5rem;
+    background-color: $darkBlue;
+    color: $orange;
+    margin: 1.5rem auto 0.5rem;
+    font-size: 0.95rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .select-section {
+    gap: 0.5rem !important;
+
+    .item {
+      width: 45px !important;
+      height: 45px !important;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<!-- lear -->
+<!-- Interactive Rating Component -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- First Section -->
+      <div class="first-section">
+        <img
+          src="images/icon-star.svg"
+          alt="icon-star"
+          class="icon-star first-section"
+        />
+        <h1 class="title">How did we do?</h1>
+
+        <p class="text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="select-section">
+          <button class="item">1</button>
+          <button class="item">2</button>
+          <button class="item">3</button>
+          <button class="item">4</button>
+          <button class="item">5</button>
+        </div>
+
+        <button class="btn">SUBMIT</button>
+      </div>
+
+      <!-- Second Section -->
+      <div class="second-section">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt="illustration-thank-you"
+          class="thank-img"
+        />
+
+        <h3 class="selected">
+          You selected <span class="spec-number"></span> out of 5!
+        </h3>
+
+        <h1 class="title">Thank you!</h1>
+        <p class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <noscript>You need enabled Javascript to run this app!</noscript>
+    <script src="main.js"></script>
+  </body>
+</html>
