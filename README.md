@@ -1,6 +1,6 @@
 # Interactive-Rating-Component
 
-Built in HTML and SCSS!
+Built in HTML, SCSS and JS!  
 
 ![desktop-preview](https://user-images.githubusercontent.com/100687592/226219155-ddb19820-0f27-402c-831e-497533da5a19.jpg)
 
